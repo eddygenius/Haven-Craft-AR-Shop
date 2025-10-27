@@ -1,13 +1,23 @@
 {
   "version": 2,
-  "public": true,
   "builds": [
-    { "src": "my_ARfiles/complete/main-file/index.html", "use": "@vercel/static" }
+    { "src": "my_ARfiles/complete/main-file/**/*", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/(.*)", "dest": "/my_ARfiles/complete/main-file/$1" }
+  ],
+  "headers": [
     {
-      "src": "/(.*)",
-      "dest": "/my_ARfiles/complete/main-file/$1"
+      "source": "/(.*)\\.js",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.glb",
+      "headers": [
+        { "key": "Content-Type", "value": "model/gltf-binary" }
+      ]
     }
   ]
 }
