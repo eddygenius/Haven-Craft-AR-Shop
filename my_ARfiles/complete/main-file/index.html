@@ -9,11 +9,27 @@
 
   
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-
  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/shop-homepage.css">
+
+  <script src="/my_ARfiles/libs/fas.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "../../node_modules/three/build/three.module.js",
+        "three/addons/": "../../node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module">
+    import { App } from './app.js';
+    document.addEventListener("DOMContentLoaded", function () {
+      const app = new App();
+      window.app = app;
+    });
+  </script>
 
   
   <style>
