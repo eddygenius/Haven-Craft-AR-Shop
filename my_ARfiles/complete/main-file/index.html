@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Haven Craft Furniture</title>
+
+  
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 0.8rem 1rem;
+    }
+
+
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 8px;
+      border-radius: 6px;
+    }
+
+    .hero-section {
+      position: relative;
+      background: url('../../assets/ar-shop/banner1.jpg') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content .btn {
+      padding: 0.7rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-title a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      border-top: none;
+    }
+
+    .ar-button {
+      background: #08a802;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+
+    .ar-button:hover {
+      background: #444;
+    }
+
+    footer {
+      background: #111;
+      padding: 2rem 0;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="../../libs/fas.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "../../node_modules/three/build/three.module.js",
+        "three/addons/": "../../node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module">
+    import { App } from './app.js';
+    document.addEventListener("DOMContentLoaded", function () {
+      const app = new App();
+      window.app = app;
+    });
+  </script>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="../../assets/ar-shop/logo-nav.jpg" alt="Logo"> Haven Craft Furniture
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Contact
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownContact">
+        <a class="dropdown-item" href="mailto:edwardnkem4@gmail.com">📧 edwardnkem4@gmail.com</a>
+        <a class="dropdown-item" href="tel:+2348103025793">📞 +2348103025793</a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+    </div>
+  </nav>
+
+
+<section id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="hero-section" style="background: url('../../assets/ar-shop/banner1.jpg') center/cover no-repeat;">
+        <div class="hero-content">
+          <h1>View Our Products in Your Personal Space with Our AR Experience</h1>
+          <p>Modern Furniture for Elegant Spaces.</p>
+          <a href="#shop" class="btn btn-light">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <div class="hero-section" style="background: url('../../assets/ar-shop/banner2.jpg') center/cover no-repeat;">
+        <div class="hero-content">
+          <h1>Luxury Meets Comfort</h1>
+          <p>Bring sophistication to every corner of your home.</p>
+          <a href="#shop" class="btn btn-light">Explore</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <div class="hero-section" style="background: url('../../assets/ar-shop/banner3.jpg') center/cover no-repeat;">
+        <div class="hero-content">
+          <h1>Timeless Craftsmanship</h1>
+          <p>Handmade furniture designed for generations.</p>
+          <a href="#shop" class="btn btn-light">Browse</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Products -->
+  <div class="container my-5" id="shop">
+    <h2 class="mb-4 text-center font-weight-bold">Our Collection</h2>
+    <div class="row">
+
+      <!-- Product 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="../../assets/ar-shop/chair1.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title"><a href="#">ErgoChair</a></h4>
+            <h5>N55,000</h5>
+            <p class="card-text">A sleek design chair perfect for your office or living room.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">★★★★☆</small>
+            <button class="ar-button" onclick="window.app.showChair(1);">
+  <i class="fas fa-camera"></i> View in AR
+</button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="../../assets/ar-shop/chair2.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title"><a href="#">Lounge Chair</a></h4>
+            <h5>N25,000</h5>
+            <p class="card-text">Minimalist comfort that fits seamlessly into any modern interior.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">★★★★☆</small>
+            <button class="ar-button" onclick="window.app.showChair(2);"><i class="fas fa-camera"></i> View in AR</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="../../assets/ar-shop/chair3.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title"><a href="#">Royal Oak Outdoor Chair</a></h4>
+            <h5>N30,000</h5>
+            <p class="card-text">Designed with both durability and elegance in mind.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">★★★★☆</small>
+            <button class="ar-button" onclick="window.app.showChair(3);"><i class="fas fa-camera"></i> View in AR</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="../../assets/ar-shop/chair4.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title"><a href="#">Depadova Chair</a></h4>
+            <h5>N54,000</h5>
+            <p class="card-text">A cozy yet stylish piece to elevate your space.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">★★★★☆</small>
+            <button class="ar-button" onclick="window.app.showChair(4);"><i class="fas fa-camera"></i> View in AR</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="../../assets/ar-shop/chair5.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title"><a href="#">Torkel Swivel Chair</a></h4>
+            <h5>N47,000</h5>
+            <p class="card-text">Crafted with premium materials for lasting comfort.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">★★★★☆</small>
+            <button class="ar-button" onclick="window.app.showChair(5);"><i class="fas fa-camera"></i> View in AR</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="../../assets/ar-shop/chair6.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title"><a href="#">Oak Dining Chair</a></h4>
+            <h5>N87,000</h5>
+            <p class="card-text">Elegant craftsmanship blending tradition and modernity.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">★★★★☆</small>
+            <button class="ar-button" onclick="window.app.showChair(6);"><i class="fas fa-camera"></i> View in AR</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>© 2025 Haven Craft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
