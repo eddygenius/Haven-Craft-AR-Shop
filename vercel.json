@@ -1,9 +1,10 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
-    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } }
+    { "src": "my_ARfiles/complete/main-file/index.html", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/my_ARfiles/complete/main-file/index.html" }
+    { "src": "/(.*)", "dest": "/my_ARfiles/complete/main-file/$1" }
   ]
 }
