@@ -1,9 +1,9 @@
 {
-  "name": "ar-furniture",
+  "name": "havencraft-ar",
   "version": "1.0.0",
-  "description": "Furniture AR Viewer",
+  "description": "HavenCraft AR Furniture Viewer",
   "scripts": {
-    "vercel-build": "echo 'Static AR site - no build needed'"
+    "vercel-build": "echo 'Static build - no build step needed'"
   },
   "license": "ISC"
 }

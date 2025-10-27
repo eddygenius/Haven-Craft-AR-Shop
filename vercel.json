@@ -1,9 +1,15 @@
 {
   "version": 2,
   "builds": [
-    { "src": "my_ARfiles/complete/main-file/index.html", "use": "@vercel/static" }
+    {
+      "src": "havenCraft/my_ARfiles/complete/main-file/index.html",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/my_ARfiles/complete/main-file/$1" }
+    {
+      "src": "/(.*)",
+      "dest": "havenCraft/my_ARfiles/complete/main-file/$1"
+    }
   ]
 }
