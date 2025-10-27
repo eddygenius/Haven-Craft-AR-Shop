@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "public": true,
   "builds": [
     { "src": "my_ARfiles/complete/main-file/index.html", "use": "@vercel/static" }
   ],

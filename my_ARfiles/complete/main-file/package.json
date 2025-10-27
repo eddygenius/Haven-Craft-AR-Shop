@@ -1,12 +1,9 @@
 {
   "name": "main-file",
   "version": "1.0.0",
-  "description": "Static HTML/CSS/JS site",
-  "main": "app.js",
+  "description": "Static HTML/CSS/JS project",
   "scripts": {
     "vercel-build": "echo 'No build needed'"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC"
 }
