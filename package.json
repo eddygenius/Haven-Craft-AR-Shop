@@ -1,9 +1,9 @@
 {
-  "name": "main-file",
+  "name": "ar-furniture",
   "version": "1.0.0",
-  "description": "AR project hosted on Vercel",
+  "description": "Furniture AR Viewer",
   "scripts": {
-    "vercel-build": "echo 'No build step needed'"
+    "vercel-build": "echo 'Static AR site - no build needed'"
   },
   "license": "ISC"
 }
