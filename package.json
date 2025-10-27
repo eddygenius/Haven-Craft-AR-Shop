@@ -1,9 +1,9 @@
 {
   "name": "main-file",
   "version": "1.0.0",
-  "description": "Static HTML/CSS/JS project",
+  "description": "AR project hosted on Vercel",
   "scripts": {
-    "vercel-build": "echo 'No build needed'"
+    "vercel-build": "echo 'No build step needed'"
   },
   "license": "ISC"
 }
